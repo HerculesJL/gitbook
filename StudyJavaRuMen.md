@@ -1,4 +1,4 @@
-# Java是如何运行的
+# 第一章、Java是如何运行的
 ## 一、创建JAVA类文件
 ## 二、JAVA包管理器
 ### 1.关于包(package)
@@ -17,4 +17,6 @@
     public class Hello{
     }
     ```
-    *注意：一个文件只有一个package语句*
+    *注意：一个文件只有一个package语句；*
+    *如果域名是lol.com 那么包路径应该是com.lol*
+# 第二章、创建对象
