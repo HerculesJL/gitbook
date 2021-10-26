@@ -52,3 +52,14 @@
 垂直布局中添加的组件是竖着排布的;若改成继承Horizantallayout则会变成水平布局
 
 TextField类对象的setlable("string")方法可以在添加的输入框前添加文本；
+setPlaceholder("string")设置输入框内的默认文本(不是具体内容，只是类似于提示文本的样式)
+setValue("string")会覆盖placeholder的内容 其内容为实在的默认文本
+
+## 第三章、方法进阶
+### 3.1、Button按钮
+>直接new Button就行,Button对象拥有许多方法
+```
+1. setText()设置button的文本
+1. 当然也可以直接用构造函数 ：new Button("string")
+1. 
+```
