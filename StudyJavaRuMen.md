@@ -137,4 +137,25 @@ public 返回类型 方法名称(方法参数){
 * 用户名
 * 密码
 
+### 4.3 LocalDateTime
+
+1. LocalDate类对象的now()方法会返回日期
+1. LocalTime类对象的now()方法会返回当前时间
+1. LocalDateTime类对象的now()方法会返回日期以及时间 `默认格式为：2021-10-27T22:10:27`
+1. 借助于DateTimeFormatter类对象可以设置输出日期的格式。
+```
+LocalDateTime now = LocalDateTime.now();
+
+DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
+
+String now = dtf.format(now);
+
+System.out.println(now);
+```
+1. 将字符串转为日期类型的对象 `调用parse方法`
+```
+String str1 = "2021/10/27 22:45:00"
+
+LocaoDateTime.parse(str1,dtf);//dtf用于指定格式，注意dtf的格式需要和string中的相匹配。
+```
 
