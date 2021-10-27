@@ -67,8 +67,7 @@ setValue("string")会覆盖placeholder的内容 其内容为实在的默认文�
 >直接new Button就行,Button对象拥有许多方法
 ```
 1. setText()设置button的文本
-2. 当然也可以直接用构造函数 ：new Button("string")
- 
+2. 当然也可以直接用构造函数 ：new Button("string") 
 ```
 
 ### 3.2 Lambda表达式
@@ -79,6 +78,7 @@ setValue("string")会覆盖placeholder的内容 其内容为实在的默认文�
 3.需要在定义button对象后(假设命名为loginButton)调用
 
 > **注意大括号的存在**
+
 ```
 loginButton.addClickListener(click->{
 sout("login");
