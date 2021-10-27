@@ -5,8 +5,11 @@
 ` 包的路径格式为 com.youkeda.mode.Invoice`
 1. 包路径采用'.'分割
 1. 包路径不是绝对的文件路径，是相对Java工程目录的路径
+
 #### 2.包名的规范
+
 #### 3.自定义包
+
 1. 自定义包就是创建文件夹
 1. 如果在某个包下创建Java文件，那么Java类的内容就需要多一个声明包路径的语法
 
@@ -20,7 +23,9 @@
     *注意：一个文件只有一个package语句；*
     *如果域名是lol.com 那么包路径应该是com.lol*
 ## 第二章、创建对象
+
 ### 2.2对象变量
+
 #### (1).变量名
 变量名的首字母要小写
 
@@ -31,6 +36,7 @@
 >数字类型变量初始化不需要加
 
 如：`Integer num1 = new Integer(value:100);`
+
 #### (2).关键词
 关键词不能用作变量名
 
@@ -56,6 +62,7 @@ setPlaceholder("string")设置输入框内的默认文本(不是具体内容，�
 setValue("string")会覆盖placeholder的内容 其内容为实在的默认文本
 
 ## 第三章、方法进阶
+
 ### 3.1、Button按钮
 >直接new Button就行,Button对象拥有许多方法
 ```
@@ -63,10 +70,14 @@ setValue("string")会覆盖placeholder的内容 其内容为实在的默认文�
 2. 当然也可以直接用构造函数 ：new Button("string")
  
 ```
+
 ### 3.2 Lambda表达式
 1.事件：例如按按钮给出响应的能力
+
 2.可以使用Lambda来支持事件行为；
+
 3.需要在定义button对象后(假设命名为loginButton)调用
+
 > **注意大括号的存在**
 ```
 loginButton.addClickListener(click->{
@@ -77,8 +88,10 @@ sout("login");
 >如上定义后，点击button会输出login；
 
 4.tips：调用userNameField.getValue()可以获得在输入框usernameField输入的字符串。
+
 ### 3.3逻辑语句
 简单的if语句判断罢了
+
 ### 3.4自定义方法
 
 方法的语法格式：
@@ -98,6 +111,7 @@ public 返回类型 方法名称(方法参数){
 4.route注解用于完成多个页面的配置。`@Route("/login.html")` 加在类之前后，就可以指定页面的路径为login.html;
 
 ## 第四章、面向对象
+
 ### 4.1概要
 使用到的知识点：
 
