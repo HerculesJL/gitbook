@@ -162,3 +162,51 @@ String str1 = "2021/10/27 22:45:00"
 LocaoDateTime.parse(str1,dtf);//dtf用于指定格式，注意dtf的格式需要和string中的相匹配。
 ```
 
+### 4.4 接口的介绍
+引入:如何支持多个用户的注册？
+
+解决：借助Java的集合存储。
+1. 接口是一个抽象类型，是抽象方法的集合，通常用interface来声明。
+1. 接口可以视为一堆方法的集合，一个接口可有多种实现。
+1. Java中的集合有专门的接口定义。Collection这个接口就可以表明支持存储多个元素。Collection接口又有三种子类型，List、Set和Queue(他们都继承于Collection)，在下面是一些抽象类，最后是具体实现类，常用的有ArrayList、LinkedLisy、HashSet、HashMap等。
+1. 集合框架是一个用来代表和操作集合的同意框架。所有的集合框架都包含如下内容：
+
+```
+* 接口：是代表集合的抽象数据类型，如Collection、List、Set、Map等。之所以定义多个接口，是为了以不同的方式操作集合对象
+
+* 实现(类)：是集合接口的具体实现。从本质上讲，它们是可重复使用的数据结构，例如：ArrayList、HashSet、HashMap。
+
+* 算法：是实现集合接口的对象里的方法执行的一些有用的计算。例如：搜索和排序。这些算法被称为多态，那是因为相同的方法可以在相似的接口上有着不同的实现。
+```
+
+除了集合，框架也定义了Map接口和类。
+下面是关于集合类的架构：
+
+![集合类的架构](https://qgt-style.oss-cn-hangzhou.aliyuncs.com/img/course/j200/java-coll.png)
+
+> 一般来说，最常用的是List接口于他的实现类ArrayList
+
+### 4.5 ArrayList
+ArrayList类是一个可以动态修改的数组。没有固定大小的限制，可以添加或删除元素。
+![](https://qgt-style.oss-cn-hangzhou.aliyuncs.com/img/course/j200/ArrayList.png)
+>在Java中接口不能被直接实例化，若像创建一个接口类型的变量，需要new来实现*类*。
+
+例如：
+```
+List<String> strings = new ArrayList();
+
+// 创建一个用户集合，用于存储多个用户信息
+List<User> users = new ArrayList<>();
+```
+
+下面介绍ArrayList类带的几个方法：
+
+```
+* add() //添加操作
+* get(i) //获得第i+1个对象
+* remove(i) //删除第i+1个对象
+* clear()//删除整个集合
+```
+
+>for循环格式`for(Score score1:scores) `scores是Score类型的集合（如ArrayList类型的）；
+
