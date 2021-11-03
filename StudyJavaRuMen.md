@@ -210,3 +210,60 @@ List<User> users = new ArrayList<>();
 
 >for循环格式`for(Score score1:scores) `scores是Score类型的集合（如ArrayList类型的）；
 
+## 第五章、文件IO
+
+### 5.2 异常
+```
+try{
+//对这里的异常进行捕获
+}catch(exception e){
+//捕获异常后做出的反应
+
+}finally{
+//不管捕获或者没有捕获异常都会做出的反应
+}
+```
+
+使用try catch后，出现错误不会报错，而是会抛出异常，也不会终端代码的执行
+
+### 5.3 文件读
+#### (1)配置Apache commons-io
+在`pom.xml`文件下的`<dependencies>`节点里添加下列内容：
+
+```
+<dependency>
+  <groupId>commons-io</groupId>
+  <artifactId>commons-io</artifactId>
+  <version>2.10.0</version>
+</dependency>
+```
+
+#### (2)文件对象
+文件对象：File，输入文件路径进行初始化。
+
+   1. 若想要当前目录下的则为`./name.txt`,例如 File nameFile = new File("./name.txt")
+   1. 使用FileUtils的方法读取文件内容为String
+   `String content = FileUtils.readFileTostring(nameFilr,"utf-8") `  
+   1. FileUtils有方法`readLines`可以按文件的行读取文件。；
+    ```
+    List<string> lines = null;
+    try{
+        lines = FileUtils.readLines(usersFile,"uts-8");
+    }catch(exception e){
+        e.printStackTrace();
+    }
+
+    for(String line:lines){
+        String[] strings = line.split(" ");//会按空格分割一行 分割为一个个单词
+        
+    }
+    ```
+   > FileUtils的readFileToString方法中不添加utf-8会报方法过时的错；可以用异常捕获来抓获异常。
+
+   >如果用try catch捕获异常，需要提前定义string content 否则会出现作用域只限于try的问题导致读取的content没有办法在外面使用
+
+   >new File(parent:".",child:"config/demo");可以有俩参数，如上写法就可以不用写点斜杠。 总的路径是父路径与子路径的拼接
+
+
+
+
