@@ -14,6 +14,8 @@ fruits.forEach(f -> {
 ```
 >无类型指的是不给f指代类型，Lambda表达式自动从上下文获取类型为fruit。
 
+>foreach()方法是集合类提供的用于遍历集合中元素的函数。
+
 ![](https://style.youkeda.com/img/ham/course/j5/j5-1-2-1.svg)
 
 注意点：Lambda表达式要配合上下文、跟其他方法配合使用。
