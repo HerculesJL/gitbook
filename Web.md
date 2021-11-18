@@ -59,3 +59,19 @@ API:Application Programming Interface,应用程序接口。本质上就是一个
     //调用
     String content = poster.postContent(url,formBody);
     ```
+
+### 2.5 post提交JSON格式
+
+可以将Map直接转换为JSON，但首先需要添加json的操作库。groupId为`com.alibaba`。
+```
+<groupId>com.alibaba</groupId>
+<artifactId>fastjson</artifactId>
+<version>1.2.62</version>
+```
+
+然后调用`String a = JSON.toJSONString(fromData);`
+
+接着调用`RequestBody resquestBody = RequestBody.create(JSON_TYPE,a);`
+>这边的JSON_TYPE是定义的常量：`private static final MediaType JSON_TYPE = MediaType.parse("application/json; charset=utf-8");`
+
+之后将requestBody作为参数，像上一节中的fromBody传给Request request = new Request.Builder().url(url).post(requestBody).build();
