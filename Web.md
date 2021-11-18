@@ -28,12 +28,12 @@ API:Application Programming Interface,应用程序接口。本质上就是一个
 
 1. 放入表单数据
 由于在方法中会以Map数组形式传入一组数据，所以要用到for循环遍历Map对象formData来放入表单数据。
-```
-for(String key:formData.keySet()){//keySet()是自带方法
-    builder.add(key,formData.get(key));
 
-}
-```
+    ```
+    for(String key:formData.keySet()){//keySet()是自带方法
+        builder.add(key,formData.get(key));
+    }
+    ```
 
 1. 构建FromBody 对象
 `FormBody formBody = builder.build();`
@@ -50,12 +50,12 @@ for(String key:formData.keySet()){//keySet()是自带方法
 1. call.execute()返回的其实是一个执行的结果对象，调用对象的方法即可获取返回的字符串内容：
     `call.execute().body().string();` 
 
-1.传入的fromData的构造方式
-```
-Map<String,String> fromBody = new HashMap<>();
+1. 传入的fromData的构造方式
+    ```
+    Map<String,String> fromBody = new HashMap<>();
 
-fromBody.put("","");
+    fromBody.put("","");
 
-//调用
-String content = poster.postContent(url,formBody);
-```
+    //调用
+    String content = poster.postContent(url,formBody);
+    ```
