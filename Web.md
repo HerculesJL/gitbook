@@ -118,3 +118,62 @@ User-Agent解决程序请求HTTP不成功的情况。
 图片防盗链，爬取图片无法访问的问题。
 解决：把Referer信息设置为图片原始使用的网站。
 在后面章节中会指定如何使用工具查找Referer值。
+
+
+## 第五章、下载文件、图片
+### 5.1下载文件
+首先肯定要爬取的是byte[] 类型的数据，然后要将这类无法输出在`console`查看的二进制文件内容写入文件。
+
+在Java中写入文件必须经历三个步骤：
+```
+创建文件对象
+   ↓
+写入内容
+   ↓
+关闭写入操作
+
+```
+>打开和关闭的操作相当于PV操作，用于互斥访问文件。
+
+**（1）写入文本文件**
+```
+import java.io.File;
+import java.io.FileWriter;
+
+// 文件对象
+File file = new File("foo.txt");
+
+// 写入内容
+FileWriter fileWritter = new FileWriter(file.getName());
+fileWritter.write(content);
+
+// 关闭
+fileWritter.close();
+
+```
+
+>File是文件类，FileWriter是用来给文件写入内容的类。**写入文件类必须执行关闭操作！！！！**
+
+**（2）写入二进制文件**
+```
+import java.io.File;
+import java.io.FileOutputStream;
+
+// 文件对象
+File file = new File("china-city-list.xlsx");
+
+// 写文件
+FileOutputStream fos = new FileOutputStream(file);
+fos.write(data);
+
+// 必须刷新并关闭
+fos.flush();
+fos.close();
+
+
+```
+>写入二进制文件必须刷新并关闭。
+
+### 5.1下载文件
+
+同样是爬取的二进制格式，只要在创建文件时，将后缀写成jpg就ok。
