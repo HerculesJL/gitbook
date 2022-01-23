@@ -72,3 +72,109 @@ BOM只会处理跟浏览器相关的东西，比如：
 
 ` <script src='index.js'></script>`
 >书写位置和写在HTML内部时一样
+### 1.3 JavaScript入门
+####注释大致同c语言
+块注释：
+
+/*
+*
+*
+*/
+####字符串
+单引号与双引号都可
+
+####模板字符串
+
+核心：反引号（``）与占位符${expression}。反引号的作用：将字符串和变量抱起来，占位符作用：在字符串中插入变量。
+>占位符语法：${变量名}
+
+变量名也可以是表达式
+占位符例子之表达式：
+
+```
+let number1 = 20;
+let number2 = 10;
+console.log(`两个数的和是：${number1 + number2} 
+两个数的差是：${number1 - number2} 。`);
+
+```
+
+占位符例子2：
+
+```
+let firstName = "胡";
+let lastName = "雪岩";
+
+let say = `大家好，我姓${firstName}，名${lastName}`;
+
+console.log(say);
+
+```
+
+多行字符串拼接且有换行时，在模板字符串中直接换行就行
+
+```
+let str = `春眠不觉晓
+处处闻啼鸟
+夜来风雨声
+花落知多少`;
+
+console.log(str);
+
+```
+####模板字符串中使用三元表达式
+
+```
+let str = `这里是${false ? "浙江" : "江苏"}`;
+
+console.log(str); // 江苏
+
+```
+
+使用场景一：根据屏幕的宽度来动态的更改样式。
+```
+// 定义屏幕的宽度，当然这个宽度是根据window的api去获取的
+let screen = 760;
+
+// 判断屏幕是大屏还是小屏，这里我们认为大于760px的就是大屏
+function isLargeScreen() {
+  return screen > 800;
+}
+
+// 定义元素的排列方式，大屏row排列，小屏column排列
+// 具体什么排列方式，是根据屏幕大小决定的
+let item = {
+  isCollapsed: screen > 800
+};
+
+// 这里我们就要根据上面的信息来动态的获取类名（多个）
+const classes = `header ${
+  isLargeScreen() ? "" : `icon-${item.isCollapsed ? "column" : "row"}`
+}`;
+
+console.log(classes);
+```
+
+使用场景二：在JS代码中组装HTML代码。
+
+```
+let htmlCode = `
+    <img src='' />
+    ${
+      true
+        ? `<img src='https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1906469856,4113625838&fm=26&gp=0.jpg' />`
+        : `<img src='' />`
+    }
+`;
+console.log(htmlCode);
+// <img src='' />
+//    <img src='https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1906469856,4113625838&fm=26&gp=0.jpg' />
+
+
+```
+
+注意html代码作为条件成功后要输出的内容，要用反引号括起来。
+####转义符 \
+在双引号之间使用双引号"我是\\"天才\\""
+
+在模板字符串中使用反引号
