@@ -288,3 +288,21 @@ count();
 
 无线调用setInterval
 ![setInterval函数基础语法](https://document.youkeda.com/P3-4-HTML-CSS/6/4.jpg?x-oss-process=image/resize,w_800/watermark,image_d2F0ZXJtYXNrLnBuZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzEwMA==,t_60,g_se,x_10,y_10)
+
+
+用setInterval实现倒计时
+```
+let i = 60;
+print();
+let timer = setInterval(print, 1000);
+
+function print() {
+  console.log(i);
+  i--;
+  if (i < 1) {
+    clearInterval(timer);
+  }
+}
+
+```
+>注意点在于当i减少到0的时候，应该停止调用print方法，清除计时器。
