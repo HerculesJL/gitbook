@@ -17,3 +17,10 @@ Maven命令（** 需要在根目录下执行** ）
 3. mvn clean install
 
 执行安装命令，这个命令是compile、package和install的集合，会依次执行compile、jar和install命令。install命令安装jar到本地的Maven仓库目录里。
+
+4. mvn compile exec:java -Dexec.mainClass= ${main}
+
+意思是在compile执行完后，执行运行java的命令，执行的Java类是由-Dexec.mainClass= ${main}参数决定的。
+若要执行com.youkeda.Test类，则完整的命令是：
+
+mvn compile exec:java -Dexec.mainClass=com.youkeda.Test
