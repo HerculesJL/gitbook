@@ -245,7 +245,7 @@ for (let item of peppaFamily) {
 ### 6.5内置函数--计时器
 定时执行代码函数 setTimeout()和setInterval()
 
-延时执行setTimeout()
+#### 1.延时执行setTimeout()
 
 用于指定某个函数或者某段代码在多少毫秒之后执行。他返回一个整数，表示定时器的编号，可以用于取消该定时器。
 
@@ -256,3 +256,30 @@ let timerId= setTimeout(fun/code,delay)
 ```
 
 其中fun是函数，delay是推迟执行的毫秒数。
+
+#### 2.验证码的倒计时
+递归调用书写计时器
+
+```
+// 首先定义计时总秒数，单位 s
+let i = 60;
+
+// 定义变量用来储存定时器的编号
+let timerId;
+
+// 写一个函数，这个函数即每次要执行的代码，能够完成上述的 1、2、3
+function count() {
+  console.log(i);
+  i--;
+  if (i > 0) {
+    timerId = setTimeout(count, 1000);
+  } else {
+    // 清除计时器
+    clearTimeout(timerId);
+  }
+}
+
+// 首次调用该函数，开始第一次计时
+count();
+
+```
