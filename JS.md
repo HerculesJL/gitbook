@@ -217,3 +217,14 @@ for (let item of peppaFamily) {
 
 ```
 ### 5.2 while循环
+## 第六章：函数
+### 6.2自定义函数
+两种声明方法：function命令和函数表达式。
+1. function命令格式：
+![image-3.png](./image-3.png)
+
+1. 函数表达式
+![image-4.png](./image-4.png)
+![image-5.png](./image-5.png)
+
+
