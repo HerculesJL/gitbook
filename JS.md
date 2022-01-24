@@ -242,7 +242,7 @@ for (let item of peppaFamily) {
 
 ![image-9.png](./image-9.png)
 
-### 6.5内置函数--计时器
+### 6.5内置函数--计时器1
 定时执行代码函数 setTimeout()和setInterval()
 
 #### 1.延时执行setTimeout()
@@ -284,3 +284,7 @@ count();
 
 ```
 >注意：setTimeout中的第一个参数是函数时不要加括号，另外，计数器定义要写在全局。
+### 6.5内置函数--计时器2
+
+无线调用setInterval
+![setInterval函数基础语法](https://document.youkeda.com/P3-4-HTML-CSS/6/4.jpg?x-oss-process=image/resize,w_800/watermark,image_d2F0ZXJtYXNrLnBuZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzEwMA==,t_60,g_se,x_10,y_10)
