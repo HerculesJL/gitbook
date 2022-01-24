@@ -283,3 +283,4 @@ function count() {
 count();
 
 ```
+>注意：setTimeout中的第一个参数是函数时不要加括号，另外，计数器定义要写在全局。
