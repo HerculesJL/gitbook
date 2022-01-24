@@ -219,7 +219,7 @@ for (let item of peppaFamily) {
 ### 5.2 while循环
 ## 第六章：函数
 ### 6.2自定义函数
-两种声明方法：function命令和函数表达式。
+#### 两种声明方法：function命令和函数表达式。
 1. function命令格式：
 ![image-3.png](./image-3.png)
 
@@ -228,3 +228,16 @@ for (let item of peppaFamily) {
 ![image-5.png](./image-5.png)
 
 
+#### 函数声明的提升
+![image-6.png](./image-6.png)
+
+
+#### 两种声明方式的区别
+![image-7.png](./image-7.png)
+
+#### 函数的重复声明
+![image-8.png](./image-8.png)
+
+#### 立即执行函数
+
+![image-9.png](./image-9.png)
