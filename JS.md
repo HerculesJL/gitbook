@@ -241,3 +241,18 @@ for (let item of peppaFamily) {
 #### 立即执行函数
 
 ![image-9.png](./image-9.png)
+
+### 6.5内置函数--计时器
+定时执行代码函数 setTimeout()和setInterval()
+
+延时执行setTimeout()
+
+用于指定某个函数或者某段代码在多少毫秒之后执行。他返回一个整数，表示定时器的编号，可以用于取消该定时器。
+
+基础语法：
+```
+let timerId= setTimeout(fun/code,delay)
+
+```
+
+其中fun是函数，delay是推迟执行的毫秒数。
