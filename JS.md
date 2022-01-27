@@ -330,3 +330,5 @@ BOM中四个最重要的对象如下：
 1. navigator 事情整个浏览器唯一的。如果有多个浏览器就会有多个navigator
 1. window是每个网页唯一的，每个网页都有一个独立的window
 1. history，location是每个网页的信息，所以是网页唯一的
+
+### 8.2 window
