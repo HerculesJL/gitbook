@@ -64,7 +64,8 @@ BOM只会处理跟浏览器相关的东西，比如：
 
 ```
 
->script 标签在HTML文件中的位置很随意，可以说写在哪里都无所谓，但在学习JavaScript的DOM的时候，如果不注意script标签的位置，会出现意想不到的报错
+>script 标签在HTML文件中的位置很随意，可以说写在哪里都无所谓，但在学习JavaScript的DOM的时候，如果不注意script标签的位置（body的内容的最底下），会出现意想不到的报错
+
 #### Javascript标签写在HTML外部
 和CSS一样，在JavaScript中也推崇代码分离。通过标签去引入xxx.js文件。
 
