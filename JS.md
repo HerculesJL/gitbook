@@ -336,3 +336,20 @@ BOM中四个最重要的对象如下：
 1. window对象表示一个浏览器窗口或一个frame框架，他处于对象层次的最顶端，提供了处理浏览器窗口的方法和属性。
 1. window对象是浏览器对象中的默认对象，所以可以隐式地引用window对象的属性和方法。在浏览器环境中，添加到window对象中的方法、属性等，其作用域都是全局的。
 
+对默认对象以及隐式引用的理解：
+```
+console.log('优课达');
+window.console.log('优课达');
+
+console.log(navigator);
+console.log(window.navigator);
+
+function hello() {}
+console.log(hello);
+console.log(window.hello
+
+```
+
+console.log等于window.console.log,navagator等于window.navigator,甚至自定义的顶层函数，也是挂载在window下面的。
+
+总结：window是默认对象，如果调用window的方法，可以省略window，也可以称为隐式调用window的属性和方法。
