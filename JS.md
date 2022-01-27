@@ -322,3 +322,4 @@ BOM中四个最重要的对象如下：
 * **history**:用于存储整个网页栈，用于网页的前进后退
 
 * **screen**: 包含显示屏幕的信息，是硬件信息。
+![](https://style.youkeda.com/img/course/f4/8/1.jpeg?x-oss-process=image/resize,w_800/watermark,image_d2F0ZXJtYXNrLnBuZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzEwMA==,t_60,g_se,x_10,y_10)
