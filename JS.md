@@ -323,3 +323,10 @@ BOM中四个最重要的对象如下：
 
 * **screen**: 包含显示屏幕的信息，是硬件信息。
 ![](https://style.youkeda.com/img/course/f4/8/1.jpeg?x-oss-process=image/resize,w_800/watermark,image_d2F0ZXJtYXNrLnBuZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzEwMA==,t_60,g_se,x_10,y_10)
+
+** 特别强调几点**
+
+1. screen是整个电脑唯一的
+1. navigator 事情整个浏览器唯一的。如果有多个浏览器就会有多个navigator
+1. window是每个网页唯一的，每个网页都有一个独立的window
+1. history，location是每个网页的信息，所以是网页唯一的
