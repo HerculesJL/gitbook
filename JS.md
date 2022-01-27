@@ -315,10 +315,10 @@ function print() {
 #### BOM对象
 
 BOM中四个最重要的对象如下：
-* window：
+* **window**：window是整个页面的框架每个页面的内容都装载在window里面
 
-* navigator:
+* **navigator**（导航或索引吧）:存储浏览器相关信息
 
-* history:
+* **history**:用于存储整个网页栈，用于网页的前进后退
 
-* screen:
+* **screen**: 包含显示屏幕的信息，是硬件信息。
