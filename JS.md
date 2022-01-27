@@ -307,3 +307,18 @@ function print() {
 
 ```
 >注意点在于当i减少到0的时候，应该停止调用print方法，清除计时器。
+## 第八章 BOM
+### 8.1 BOM
+#### BOM
+浏览器能够帮我们渲染网页内容，和浏览器渲染有关的对象叫做浏览器对象模型（Browser Object Model）
+
+#### BOM对象
+
+BOM中四个最重要的对象如下：
+* window：
+
+* navigator:
+
+* history:
+
+* screen:
