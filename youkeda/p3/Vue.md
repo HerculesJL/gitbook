@@ -29,6 +29,12 @@ vue create vue_first
 ### 1.2 Vue工程目录介绍
 ![image.png](https://qgt-document.oss-cn-beijing.aliyuncs.com/P3-5-Vue/1/img/src-explain.png?x-oss-process=image/resize,w_800/watermark,image_d2F0ZXJtYXNrLnBuZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzEwMA==,t_60,g_se,x_10,y_10)
 
+①：assets：存放项目中需要用到的资源文件，css、js、images 等。
+②：componets: 存放 vue 开发中一些公共组件：例如项目初始的
+header.vue、footer.vue 就是公共组件。 ③：router：vue 路由的配置
+文件。 ④：views：存放页面文件 ⑤：app.vue：根组件 ⑥：
+main.js：项目的入口文件，定义了 vue 实例，并引入根组件
+app.vue，将其挂载到 index.html 中 id 为‘app’的节点上。
 
 
 
