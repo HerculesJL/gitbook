@@ -27,6 +27,6 @@ vue create vue_first
 1. 创建完成在http://localhost:8080/ 
 即可查看
 ### 1.2 Vue工程目录介绍
-![image.png](.Image/vue-src-explain.png)
+![image.png](./Image/vue-src-explain.png)
 
 
