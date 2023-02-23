@@ -36,3 +36,4 @@ app.vue，将其挂载到 index.html 中 id 为‘app’的节点上。
 
 ## 第二章 Vue双向绑定
 
+### 2.1 声明式渲染
