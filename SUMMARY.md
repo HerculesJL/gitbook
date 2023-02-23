@@ -1,6 +1,6 @@
 * [介绍](README.md)
 * [P3](youkeda/p3/README.md)
-    * [MarkDown基础语法练习](youkeda/p3/exercise.md)
+    * [MarkDown基础语法练习](youkeda/exercise.md)
     * [Java入门课程学习笔记](youkeda/p3/StudyJavaRuMen.md)
     * [网络编程学习笔记](youkeda/p3/Web.md)
     * [Web基础笔记](youkeda/p3/Web前端基础.md)
