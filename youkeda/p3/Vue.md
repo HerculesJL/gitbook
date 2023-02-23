@@ -24,6 +24,8 @@ vue create vue_first
 >创建后在c：//users下
 自定义配置选项勾选Babel、Router选项即可
 
+1. 创建完成在http://localhost:8080/ 
+即可查看
 
 
 
