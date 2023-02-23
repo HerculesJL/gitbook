@@ -34,5 +34,5 @@ header.vue、footer.vue 就是公共组件。 ③：router：vue 路由的配置
 main.js：项目的入口文件，定义了 vue 实例，并引入根组件
 app.vue，将其挂载到 index.html 中 id 为‘app’的节点上。
 
-
+## 第二章 Vue双向绑定
 
