@@ -16,6 +16,13 @@ sudo npm install -g cnpm --registry=https://registry.npm.taobao.org
 // 注意这里要用的是cnpm
 cnpm install -g @vue/cli
 ```
+1. Vue工程的创建
+```
+// vue 创建 工程名
+vue create vue_first
+```
+>创建后在c：//users下
+自定义配置选项勾选Babel、Router选项即可
 
 
 
