@@ -1,9 +1,28 @@
 ## Spring 入门
 ### 1.2 Maven入门
-Apache Maven是一个项目管理和构建自动化工具。
 
 下图是一个Maven的系统框架
 ![](https://style.youkeda.com/img/ham/course/j4/mvn.svg)
+
+Apache Maven是一个项目管理和构建自动化工具。Maven采用惯例优于配置的原则。要求没有定制之前，所有项目都要拥有相同结构：
+
+目录       目的 
+
+${basedir}                                      存放 pom.xml 和所有的子目 录 
+
+${basedir}/pom.xml                     Maven 的项目配置文件 
+
+${basedir}/src/main/java            项目的 java 源代码 
+
+${basedir}/src/main/resources  项目的资源，比如说 property 文件
+
+ ${basedir}/src/test/java              项目的测试类，比如说 JUnit 代码 
+
+${basedir}/src/test/resources     测试使用的资源
+
+这里的 ${basedir}代表的是 Java 工程的根路径，在我们这里就 是工程的根目录啦。一个 Maven 项目在默认情况下会产生 JAR (Java 的一种压缩格式)文件，另外 ，编译后 的 classes 会放在 ${basedir}/target/classes 下面， JAR 文件会放在 ${basedir}/target 下面。
+
+
 
 Maven命令（** 需要在根目录下执行** ）
 
